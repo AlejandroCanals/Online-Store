@@ -1,0 +1,32 @@
+
+###
+
+POST http://localhost:1234/api/products HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Nuevo producto",
+    "price": 200,
+    "category":"pantalones"
+}
+###
+PUT http://localhost:1234/api/products/66c707b476bf1272749ba340  HTTP/1.1 
+Content-Type: application/json
+
+{
+    "name":"Esto es un cambio",
+    "price": 20,
+    "category":"cosas",
+    "stock":300
+}
+###PATCH
+
+PATCH  http://localhost:1234/api/products/66c707b476bf1272749ba340  HTTP/1.1 
+Content-Type: application/json
+
+{
+    "name":"sdsdsd",
+    "price": 2323,
+    "category":"sdsdsdaasdas",
+    "stock":23
+}
